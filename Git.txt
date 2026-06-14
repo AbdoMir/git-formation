@@ -1,28 +1,50 @@
-# Setup
-git config --global user.name "Your Name"
-git config --global user.email "email@example.com"
-
-# Créer depo 
-Data-Challenge-1
-git remote add origin https://github.com/ABDO-MIRGAN/Data-Challenge-1.git
-git remote -v  # Vérifie le remote actuel
-	origin  https://github.com/AbdoMir/Data-Challenge-2.git (fetch)
-	origin  https://github.com/AbdoMir/Data-Challenge-2.git (push)
-git remote remove origin
-git push -u origin master
-
+# Git debut 
+- installer git bash
+- Créer un repository sur GitHub  = git-formation
+- git --version 
 
 # Initialisation
-git init 
-git clone https://github.com/user/repo.git # copier un dossier git 
+- git init  # Initialized empty Git repository , .git/
+- git clone https://github.com/user/repo.git # copier un dossier git 
 
-# Workflow quotidien
-git status                    # État actuel
-git add file.py               # Stager un fichier
-git add .                     # Stager tous les changements
-git commit -m "Message"       # Commit
-git push origin main          # Push vers remote
+
+# Setup basic configuration 
+- git config --global user.name "AbdoMir"
+- git config --global user.email "abdomirgan96@gmail.com"
+
+# Workflow quotidien 
+- git status 		 # État actuel ( vert commit , rouge non commit )
+- git add file.py          # Stager un fichier
+- git add .                # Stager tous les changements
+- git commit -m "Message"       # Commit
+- git branch 		 # branch ?? main branch par defaut sur GitHub 
+- git branch -M main 	 # changer de branch 
+
+# Comment etre sur que ce depo local est connecté a notre depo main ? 
+- On copie le lien de notre repo : https://github.com/AbdoMir/git-formation.git
+
+# 
+- git remote add origin https://github.com/AbdoMir/git-formation.git
+- git remote -v  # Vérifie le remote actuel
+	origin  https://github.com/AbdoMir/git-formation.git (fetch)
+	origin  https://github.com/AbdoMir/git-formation.git (push)
+
+# 
+- git push origin main          # Push vers remote
+
+# restaurer un fichier modifier 
+- git restore README.md 
+
+
+# clonner depo distant en locale 
+git clone https://github.com/AbdoMir/git-formation.git
+
+
+
+
 git pull origin main          # Pull depuis remote
+
+git remote remove origin
 
 # Branches
 git branch feature/new-analysis    # Créer branche
